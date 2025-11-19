@@ -8,5 +8,5 @@ def read_root():
 
 
 @app.get("/users/{user_id}")
-def get_user(user_id:int,name:str):
-    return{"user_id":user_id,"name":name}
+def get_user(user_id:int,name:str,role:str):
+    return{"user_id":user_id,"name":name,"role":role}
